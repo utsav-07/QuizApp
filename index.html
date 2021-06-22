@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class = "inner-div loginArea">
+            <div class="loginForm">
+                <div class="imgcontainer">
+                  <h2 class="heading">Alpha Quiz System</h2>
+                </div>
+              
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" class="uname" name="uname" value="admin" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password"  autocomplete="on" placeholder="Enter Password" class="psw" name="psw" value="admin" required>
+                      
+                  <button id="submit_login_form" type="submit">Submit</button>
+              
+                </div>
+              
+            
+            </div>
+        </div>
+
+
+        <div class="inner-div rulesArea">
+            <div class="area">
+                <h1>Rules and regulation for the Quiz</h1>
+                <ol>
+                    <li>Quiz will contain total 20 questions.</li>
+                    <li>One point will be awarded for each correct answer.</li>
+                    <li>No half marks will be awarded.</li>
+                    <li>Each question has 4 options.</li>
+                    <li>Do not refresh the page.</li>
+                    <li>Final score will be shown after the submission of the quiz.</li>
+                    <li>Do not move out of the quiz window else your quiz will be auto submitted.</li>
+
+                </ol>
+
+                <div  class="iAgree">
+                    <div id = "agreeBox">
+                    <label>
+                        <input type="checkbox" checked="checked" class="agree" name="agree"> I Agree
+                        <button id = "startQuiz" style="width: 50%;">Start Quiz</button>
+
+                      </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner-div questionArea">
+            <h2 class="question"> Question Come Here</h2>
+            <ul>
+                <li>
+                    <input type="radio" name = "answer" id ="ans1" class="answer">
+                    <label for ="ans1" id = "option1">Answer Option</label>
+                </li>
+                <li>
+                    <input type="radio" name = "answer" id ="ans2" class="answer">
+                    <label for ="ans2" id = "option2">Answer Option</label>
+                </li>
+                <li>
+                    <input type="radio" name = "answer" id ="ans3" class="answer">
+                    <label for ="ans3" id = "option3">Answer Option</label>
+                </li>
+                <li>
+                    <input type="radio" name = "answer" id ="ans4" class="answer">
+                    <label for ="ans4" id = "option4">Answer Option</label>
+                </li>
+            </ul>
+            <button id = "submit">Next</button>
+            <div id = "showScore" class="scoreArea"></div>
+        </div>
+
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
