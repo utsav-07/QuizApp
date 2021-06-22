@@ -45,7 +45,7 @@
 
                 </ol>
 
-                <div  class="iAgree">
+                <div  class="iAgree" >
                     <div id = "agreeBox">
                     <label>
                         <input type="checkbox" checked="checked" class="agree" name="agree"> I Agree
@@ -76,10 +76,35 @@
                     <label for ="ans4" id = "option4">Answer Option</label>
                 </li>
             </ul>
+            <button id = "back">Back</button>
             <button id = "submit">Next</button>
             <div id = "showScore" class="scoreArea"></div>
         </div>
 
+        <div class="inner-div result">
+            <div class="showResult">
+                <h1 id="urResult"></h1>
+                <h1 id="urMedian"></h1>
+            </div>
+            <div class="showResult" style="font-size: 12px;">
+                <span id="qn"></span>
+                <span id="wa"></span>
+                <span id='ca'></span>
+            </div>
+            <div class="foot">
+
+            </div>
+            <div class="tableContainer">
+                <h3>Quiz Analysis</h3>
+            <table id="customers" style="width:100%">
+                <tr >
+                    <th>QueNo</th>
+                    <th>Answers</th>
+                    <th>Mark Alloted</th>
+                  </tr>                                 
+              </table>
+            </div>
+        </div>
         
     </div>
     <script src="script.js"></script>
