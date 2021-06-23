@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="main-div">
+
+       
         <div class = "inner-div loginArea">
+        
+                <i class="icon fa fa-home"></i>
+                <hr>
+            
             <div class="loginForm">
+
+            
                 <div class="imgcontainer">
                   <h2 class="heading">Alpha Quiz System</h2>
                 </div>
@@ -32,20 +41,24 @@
 
 
         <div class="inner-div rulesArea">
-            <div class="area">
+        
+                <i class="icon fa fa-home"></i>
+                <hr>
+    
+            <div class="area" >
                 <h1>Rules and regulation for the Quiz</h1>
-                <ol>
-                    <li>Quiz will contain total 20 questions.</li>
-                    <li>One point will be awarded for each correct answer.</li>
-                    <li>No half marks will be awarded.</li>
-                    <li>Each question has 4 options.</li>
-                    <li>Do not refresh the page.</li>
-                    <li>Final score will be shown after the submission of the quiz.</li>
-                    <li>Do not move out of the quiz window else your quiz will be auto submitted.</li>
+                <ol style="color: #337ab7;">
+                    <li style="list-style: lower-roman;">Quiz will contain total 20 questions.</li>
+                    <li style="list-style: lower-roman;">One point will be awarded for each correct answer.</li>
+                    <li style="list-style: lower-roman;">No half marks will be awarded.</li>
+                    <li style="list-style: lower-roman;">Each question has 4 options.</li>
+                    <li style="list-style: lower-roman;">Do not refresh the page.</li>
+                    <li style="list-style: lower-roman;">Final score will be shown after the submission of the quiz.</li>
+                    <li style="list-style: lower-roman;">Do not move out of the quiz window else your quiz will be auto submitted.</li>
 
                 </ol>
 
-                <div  class="iAgree">
+                <div  class="iAgree" >
                     <div id = "agreeBox">
                     <label>
                         <input type="checkbox" checked="checked" class="agree" name="agree"> I Agree
@@ -57,6 +70,10 @@
             </div>
         </div>
         <div class="inner-div questionArea">
+            
+                <i class="icon fa fa-home"></i>
+                <hr>
+        
             <h2 class="question"> Question Come Here</h2>
             <ul>
                 <li>
@@ -76,11 +93,40 @@
                     <label for ="ans4" id = "option4">Answer Option</label>
                 </li>
             </ul>
+            <button id = "back">Back</button>
             <button id = "submit">Next</button>
             <div id = "showScore" class="scoreArea"></div>
         </div>
 
+        <div class="inner-div result">
+    
+                <i class="icon fa fa-home"></i>
+                <hr>
+            
+            <div class="showResult">
+                <h1 id="urResult"></h1>
+                <h1 id="urMedian"></h1>
+            </div>
+            <div class="showResult" style="font-size: 12px;">
+                <span id="qn"></span>
+                <span id="wa"></span>
+                <span id='ca'></span>
+            </div>
+            <div class="foot">
 
+            </div>
+            <div class="tableContainer">
+                <h3>Quiz Analysis</h3>
+            <table id="customers" style="width:100%">
+                <tr >
+                    <th>QueNo</th>
+                    <th>Answers</th>
+                    <th>Mark Alloted</th>
+                  </tr>                                 
+              </table>
+            </div>
+        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
