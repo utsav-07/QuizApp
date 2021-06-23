@@ -74,7 +74,7 @@ const showScore = document.querySelector('#showScore');
 
 const getCheckAnswer = () => {
     let answer;
-   // console.log(answers);
+   console.log(answers);
     answers.forEach((curAnsElem) => {
         //console.log(curAnsElem);
             if(curAnsElem.checked){
